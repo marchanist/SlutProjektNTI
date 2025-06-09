@@ -1,0 +1,158 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282A35; 
+
+}
+
+.topbar a {
+    text-decoration: none;
+    color: white;
+    font-family: "Archivo", sans-serif;
+    display: block;
+    padding: 10px 180px;
+}
+
+.topbar a:hover {
+    background-color: rgb(70, 1, 70);
+    border-radius: 5px;
+}
+
+.topbar {
+    background-color: #121214;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+.topbar ul {
+    list-style: none;
+    gap: 20px;
+    display: flex;
+}
+
+.topbar li {
+    display: inline;
+
+}
+
+audio {
+    display: flex;
+    position: absolute;
+    transform: translate(0px, 1000%);
+}
+
+.m-container {
+    text-align: center;
+    transform: translateY(20%);
+}
+
+.m-container h1 {
+    font-size: 85px;
+    width: 70%;
+    transform: translateX(20%);
+    color: white;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+}
+
+
+
+#purple {
+    color: rgb(138, 9, 138);
+    stroke: black;
+    stroke-width: 5px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;      
+    align-items: center;          
+    gap: 40px;                    
+    flex-wrap: wrap;              
+    margin-top: 30px;
+}
+
+@keyframes FadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box {
+    width: 300px;
+    height: 330px;
+    background: #121214;
+    opacity: 0;
+    animation: FadeUp 1.2s ease-out forwards;
+}
+
+
+.image {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;              
+    background-color: #ccc;
+}
+
+.image.html {
+    background-image: url(https://th.bing.com/th/id/OIP.MJgL97wJN9aI7bIr_dgnKQHaFj?rs=1&pid=ImgDetMain);
+    background-size: cover;
+
+}
+
+.image.css {
+    background-image: url(https://th.bing.com/th/id/OIP.j-afZsiPrvakcO3tpDC9ZwHaEo?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+}
+
+.image.attribut {
+    background-image: url(https://th.bing.com/th/id/OIP.QM48vJtlDyktsiapwQmlSQHaD4?w=1200&h=630&rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+}
+
+.box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 50px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: translateY(5%);
+    font-size: 20px;
+}
+
+.box a:hover {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 50px;
+    background-color: rgb(70, 1, 70);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: translateY(5%);
+    font-size: 25px;
+}
